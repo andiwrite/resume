@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+/* Left Section */
+.left-section {
+    width: 250px;
+    background-color: #FDCB58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: fixed; /* Fixed positioning */
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: hidden; /* Enable scrolling within the left section if needed */
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.second {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation ul {
+
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    margin: 20px 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: #fff;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Add margin to push content to the right */
+    background-color: #fff;
+    height: 1600px;
+    margin-top: -10px;
+}
+
+.right-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0 200px;
+    margin-left: 23%;
+    border: 3px dashed #333; /* Dashed border around "About Me" */
+}
+
+.right-section .res h1{
+    margin-top: 30px;
+}
+
+
+.right-section p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.description {
+    margin: 20px 0;
+    color: #777;
+    text-align: center;
+}
+
+/* Statistics Section - Cube Layout */
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for the cube form */
+    grid-gap: 30px;
+    margin: 40px 0;
+    justify-content: center;
+}
+
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: #FDCB58;
+}
+
+.stat-item p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    margin-bottom: 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 40px; /* Spacing to align right of the statistics */
+}
+
+.services h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style-type: none;
+    display: flex;
+  
+    gap: 80px;
+}
+
+.services ul li {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+
+.services ul li i {
+    color: #FDCB58;
+    margin-right: 10px;
+}
+
+
+.port {
+    display: flex;
+    
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin-left: 30px;
+}
+.box {
+    background-color: black;
+    margin: 10px;
+}
+.text {
+    color: navy;
+    font-size: 24px;
+    margin: 10px;
+
+}
+.top{
+    display: flex;
+     margin-left: -40px; 
+}
+.box { 
+    width: 400px; height: 400px; 
+    background-image: url(flyerrrfinal.jpg);
+background-size: cover;
+
+}
+
+.glogo{
+    position: absolute;
+    max-width: 460px;
+    margin-left: 60px;
+}
+
+img{
+    border-radius: 20px;
+    /* border: yellow 1px solid; */
+}
+
+ .move {
+    
+    position: absolute;
+} 
+
+.maga{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: -350px;
+}
+
+
+
+
+
+.skill li{
+    margin-top: 10px;
+}
+
+.skills li{
+    gap: 50px;
+    list-style: disc;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.download  a{
+    color: white;
+    text-decoration: none;
+  
+}
+
+.download{
+    margin-top: 40px;
+}
+ 
+
+.download a:hover {
+    color: blue;
+} 
+
+

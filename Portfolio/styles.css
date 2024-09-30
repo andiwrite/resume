@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scroll */
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw; /* Full width */
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.left-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.left-section h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.highlight {
+    color: #FDCB58;
+    border-bottom: 2px solid #FDCB58;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #FDCB58;
+    margin: 10px 0;
+    margin-left: 180px;
+}
+
+.btn {
+    background-color: #FDCB58;
+    padding: 10px 20px;
+    color: #333;
+    margin-left: 200px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    width: fit-content;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect for the button */
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #ffffff; /* Add background if needed */
+}
+
+.profile-pic {
+    max-width: 800px;
+    position: absolute;
+    border: #FDCB58 3px dashed;
+    height: 100vh; /* Full height */
+    object-fit: cover; /* Ensures the image covers the right section fully */
+}
+
+.icons {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f54e;
+    border: #FDCB58 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.icons a {
+    margin: 10px 0;
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+/* Hover effect for icons */
+.icons a:hover {
+    transform: scale(1.2); /* Scale up the icon when hovered */
+}
+
+.icons img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Responsive adjustments */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .left-section h1 {
+        font-size: 3rem;
+    }
+    .left-section h2 {
+        font-size: 5rem;
+    }
+    .subtitle {
+        margin-left: 100px;
+    }
+    .btn {
+        margin-left: 100px;
+    }
+    .profile-pic {
+        height: 80vh;
+        max-width: 600px;
+    }
+}
+
+/* For mobile devices, the image moves beneath the text */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack text and image vertically */
+        height: auto;
+    }
+
+    .left-section, .right-section {
+        flex: none;
+        padding: 10px;
+        width: 100%; /* Ensure full width for both sections */
+    }
+
+    .left-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .left-section h2 {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        margin-left: 50px;
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        margin-left: 50px;
+        padding: 8px 15px;
+    }
+
+    .profile-pic {
+        position: relative; /* Allow the image to flow within the document */
+        height: auto;
+        width: 100%; /* Full width on small screens */
+        max-width: none;
+        margin-top: 20px; /* Add spacing between text and image */
+    }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+    .left-section h1 {
+        font-size: 2rem;
+    }
+
+    .left-section h2 {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        margin-left: 20px;
+        font-size: 1rem;
+    }
+
+    .btn {
+        margin-left: 20px;
+        padding: 8px 10px;
+    }
+
+    .profile-pic {
+        height: auto;
+    }
+}
